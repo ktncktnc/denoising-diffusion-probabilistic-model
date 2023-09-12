@@ -2,9 +2,6 @@ import torch
 import torch.nn.functional as F
 
 
-
-
-
 def linear_beta_schedule(timesteps, start=0.0001, end=0.02, device='cuda:0'):
     return torch.linspace(start, end, timesteps).to(device)
 
